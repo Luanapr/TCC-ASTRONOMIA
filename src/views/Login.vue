@@ -7,7 +7,7 @@
               <v-toolbar-items class="hidden-sm-and-down">
                 
                 <v-btn flat>Noticias</v-btn>
-                <v-btn flat> Página de Inicial</v-btn>
+                <v-btn flat to="/inicio"> Página Inicial</v-btn>
               </v-toolbar-items>
             </v-toolbar>
     <v-layout align-center justify-center row fill-height mt-5 >
