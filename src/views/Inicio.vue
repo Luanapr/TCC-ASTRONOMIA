@@ -30,66 +30,42 @@
         <v-layout column wrap class="my-5"align-center>
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">The best way to start developing</h2>
-              <span class="subheading">
-                Cras facilisis mi vitae nunc 
-              </span>
+              <h1 class="headline"> Universo Astronômico</h1>
+              
             </div>
           </v-flex>
-          <v-flex xs12>
-            <v-container grid-list-xl>
-              <v-layout row wrap align-center>
-                <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
-                    <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
-                    </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
-                    <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
-                    </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
-                <v-flex xs12 md4>
-                  <v-card class="elevation-0 transparent">
-                    <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
-                    </v-card-text>
-                    <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Completely Open Sourced</div>
-                    </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                    </v-card-text>
-                  </v-card>
-                </v-flex>
+
               </v-layout>
             </v-container>
           </v-flex>
         </v-layout>
       </section>
 
+      <section>
+          <v-layout>
+              <v-flex xs12 sm6 offset-sm3>
+                <v-card>
+                  <v-img
+                    src="https://cdn.vuetifyjs.com/images/cards/desert.jpg"
+                    aspect-ratio="2.75"
+                  ></v-img>
+
+                  <v-card-title primary-title>
+                      <div>
+                        <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
+                        <div> {{ card_text }} </div>
+                      </div>
+                    </v-card-title>
+            
+                    <v-card-actions>
+                      <v-btn flat color="orange">Share</v-btn>
+                      <v-btn flat color="orange">Explore</v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+      </section>
+      
       <section>
         <v-parallax src="assets/section.jpg" height="380">
           <v-layout column align-center justify-center>
@@ -99,8 +75,7 @@
               class="blue lighten-2 mt-5"
               dark
               large
-              href="/pre-made-themes"
-            >
+              href="/pre-made-themes">
               Get Started
             </v-btn>
           </v-layout>
@@ -108,20 +83,7 @@
       </section>
 
       <section>
-        <v-container grid-list-xl>
-          <v-layout row wrap justify-center class="my-5">
-            <v-flex xs12 sm4>
-              <v-card class="elevation-0 transparent">
-                <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Company info</div>
-                </v-card-title>
-                <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. 
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                  Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti. 
-                </v-card-text>
-              </v-card>
-            </v-flex>
+        
             <v-flex xs12 sm4 offset-sm1>
               <v-card class="elevation-0 transparent">
                 <v-card-title primary-title class="layout justify-center">
@@ -180,25 +142,12 @@
 
 </template>
 <script>
-    export default {
-      data () {
-        return {
-          items: [
-            {
-              src: 'http://s2.glbimg.com/2HMb4vSPJ7BX71DWyguFLDko6bE=/e.glbimg.com/og/ed/f/original/2017/06/19/exoplanetas.png'
-            },
-            {
-              src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-            },
-            {
-              src: 'https://cdn.pixabay.com/photo/2015/05/06/16/31/andromeda-galaxy-755442_960_720.jpg'
-            },
-            {
-              src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-            }
-          ]
-        }
+     export default {
+    data () {
+      return {
+        card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.'
       }
     }
+  }
   </script>
 
